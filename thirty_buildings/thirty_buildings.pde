@@ -6,7 +6,7 @@ void setup() {
   rectMode(CENTER);
   building(900, 700, 150, 500, 5);
   building(75, 700, 100, 500, 3);
-  building(675, 700, 200, 300, 5);
+  building(675, 700, 200, 300, 6);
 }
 
 void CocaCola () {
@@ -74,8 +74,9 @@ void CocaCola () {
   textSize(48);
   text("Coca-Cola", 265, 490);
 }
-
+ //Buildings
 void building(float xCenter, float yBottom, float w, int buildingHeight, int numWindows) {
+ 
   float dh = 50;
 
  //Buildings
@@ -88,10 +89,11 @@ void building(float xCenter, float yBottom, float w, int buildingHeight, int num
 
   float step = w/(numWindows + 1);
   float xleft = xCenter - w / 2;
-  int n = 1;
-  while (n <= numWindows) {
-    rect(xleft + n * step, yBottom - 80, 20, 20);
-    n = n + 1;
+  int window = 1;
+  
+  while (window <= numWindows) {
+    rect(xleft + window * step, yBottom - 80, 20, 30); //You can replace "20" and 30" with "step"
+    window = window + 1;
   } 
     //Code that Shows "x" and "y" in my project
   if (mousePressed) {
