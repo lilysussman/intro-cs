@@ -17,11 +17,11 @@ void setup() {
 
 void draw() {
 
-  for (int isCat = 1; isCat <= 10; isCat = isCat + 2) {
-    tower(isCat * 90, 300, 200, "kitty", (int)  color (124, 166, 233));
+  for (int isCat = 0; isCat <= 10; isCat = isCat + 2) {
+    tower(isCat * 150, 300, 200, "kitty", (int)  color (124, 166, 233));
     }
-  for (int isperson = 2; isperson <= 10; isperson = isperson + 2) {
-    tower(isperson * 90, 300, 200, "person", (int)  color (222, 135, 12));
+  for (int isperson = 1; isperson <= 10; isperson = isperson + 2) {
+    tower(isperson * 150, 300, 400, "person", (int)  color (222, 135, 12));
   }
 }
 
